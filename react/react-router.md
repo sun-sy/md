@@ -2,7 +2,7 @@
  * @Author: Do not edit
  * @Date: 2022-10-30 22:22:58
  * @LastEditors: sun
- * @LastEditTime: 2022-10-31 00:24:32
+ * @LastEditTime: 2022-10-31 00:31:48
  * @FilePath: /md/react/react-router.md
 -->
 ### React-Router
@@ -50,7 +50,7 @@ function AppRouter() {
       this.routerConfig.map(item => {
         const { path, exact, component, name } = item;
         return (
-          <Route path={ path } exact={ exact } component={ component }></Route>
+          <Route key={ path } path={ path } exact={ exact } component={ component }></Route>
         );
       });
     </Router>
